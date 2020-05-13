@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Yes"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let disc of discs" [routerLink]="['/yes',disc.id]">
+      <ion-thumbnail slot="start">
+        <ion-img [src]="disc.image"></ion-img>
+      </ion-thumbnail>
+      <ion-label>
+        {{disc.year}} {{disc.name}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

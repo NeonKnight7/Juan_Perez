@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  groups=[
+    {
+      id: 'yes',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Yes_concert.jpg/800px-Yes_concert.jpg',
+      name: 'Yes'
+    }
+  ];
   constructor() {}
 
 }
